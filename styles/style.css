@@ -1,0 +1,293 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-img {
+    width: 200px;
+    height: auto;
+    animation: fadePulse 1.5s infinite ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+body,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    cursor: default !important;
+}
+
+html {
+    zoom: 1;
+    background-image: url("../assets/falling.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 8%;
+}
+
+.heading {
+    background-color: rgb(0, 88, 55);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: -8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 7.5% 92.5%;
+    font-family: 'Trebuchet MS';
+}
+
+#name {
+    padding: 10px
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-spacing: 100%;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 3;
+    box-shadow: -5px 15px 13px rgba(0, 0, 0, 0.3);
+}
+
+.body {
+    font-size: 120%;
+    background-color: rgba(96, 78, 161, 0.7);
+    margin-left: -2%;
+    margin-right: 60%;
+    margin-top: -8%;
+    margin-bottom: 10px;
+    padding-top: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    position: relative;
+    opacity: 100%;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: -8px;
+    overflow: hidden;
+    background-color: rgb(0, 88, 55);
+}
+
+li {
+    float: left;
+    transition: 0.2s;
+}
+
+li:hover {
+    background-color: rgb(9, 150, 98);
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Calibri;
+}
+
+#main {
+    width: 100px;
+    height: 100px;
+}
+
+#logos {
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+}
+
+h1,
+h3,
+h2 {
+    font-family: 'Century Gothic';
+}
+
+p {
+    font-family: Calibri;
+}
+
+.pfp {
+    text-align: center;
+}
+
+#pfp {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+.footer {
+    margin: -10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: white;
+    z-index: 5;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+    html {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        zoom: 1;
+    }
+
+    .body {
+        margin-right: 50%;
+        padding-top: 14%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .heading {
+        grid-template-columns: 8.5% 91.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        zoom: 1;
+    }
+
+    .body {
+        margin-right: 30%;
+        padding-top: 18%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .heading {
+        grid-template-columns: 11.5% 88.5%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        zoom: 1;
+    }
+
+    .body {
+        margin-right: -2.5%;
+        margin-left: -2.5%;
+        padding-top: 28%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .heading {
+        grid-template-columns: 18.5% 81.5%;
+        font-size: 80%;
+    }
+
+    #main {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        zoom: 1;
+    }
+
+    .navbar {
+        word-spacing: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .body {
+        font-size: 100%;
+        text-align: center;
+        margin-right: -2%;
+        margin-left: -2%;
+        padding-top: 35%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+    }
+
+    .heading {
+        grid-template-columns: 18.5% 81.5%;
+        font-size: 80%;
+    }
+
+    #main {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        zoom: 1;
+    }
+
+    .navbar {
+        word-spacing: 50%;
+        padding-left: -10px;
+        padding-right: -10px;
+    }
+
+    ul {
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    li {
+        font-size: 80%;
+    }
+}
